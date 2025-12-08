@@ -32,6 +32,40 @@
 $ yarn install
 ```
 
+## Environment Variables
+
+Create a `.env` file in the root directory of the project and configure the following environment variables:
+
+### Database Configuration (PostgreSQL)
+
+The following environment variables are used to connect to the PostgreSQL database (configured in `src/database/postgres/modules/posgres.module.ts`):
+
+| Environment Variable | Description | Example | Required |
+|---------------------|-------------|---------|----------|
+| `POSTGRES_HOST` | PostgreSQL server host address | `localhost` or `127.0.0.1` | ✅ |
+| `POSTGRES_PORT` | PostgreSQL server port | `5432` | ✅ |
+| `POSTGRES_USERNAME` | Username for database authentication | `postgres` | ✅ |
+| `POSTGRES_PASSWORD` | Password for database authentication | `your_password` | ✅ |
+| `POSTGRES_DATABASE` | Database name to connect to | `my_database` | ✅ |
+| `NODE_ENV` | Application environment (affects logging behavior) | `local`, `development`, `production` | ✅ |
+
+**Example `.env` file:**
+
+```env
+# Database Configuration
+POSTGRES_HOST=localhost
+POSTGRES_PORT=5432
+POSTGRES_USERNAME=postgres
+POSTGRES_PASSWORD=your_password
+POSTGRES_DATABASE=my_database
+NODE_ENV=development
+```
+
+**Notes:**
+- Database logs will be written to `logs/query.log` when `NODE_ENV` is `local` or `development`
+- Ensure the `logs/` directory exists or the application will automatically create it
+- `synchronize` is set to `false` to prevent automatic database schema changes
+
 ## Compile and run the project
 
 ```bash
