@@ -14,7 +14,7 @@ import { NodeEnv } from '@/common/constants';
         TypeOrmModule.forRootAsync({
             inject: [ConfigService],
             useFactory: (configService: ConfigService) => {
-                const logPath = 'logs/query.log';
+                const logPath = 'logs/application.log';
                 const logDir = path.dirname(logPath);
 
                 // Create log directory if it doesn't exist

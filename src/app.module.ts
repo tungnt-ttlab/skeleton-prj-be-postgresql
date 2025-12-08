@@ -9,6 +9,7 @@ import envSchema from './common/config/validation-schema';
 import { TransformInterceptor } from './common/transform.interceptor';
 import { HeaderMiddleware } from './common/middleware/header.middleware';
 import { PostgreModule } from './database/postgres/modules/posgres.module';
+import { FileModule } from './modules/file/file.module';
 @Module({
     imports: [
         ConfigModule.forRoot({
@@ -19,6 +20,7 @@ import { PostgreModule } from './database/postgres/modules/posgres.module';
         I18nModule,
         PostgreModule,
         AuthModule,
+        FileModule,
     ],
     controllers: [AppController],
     providers: [

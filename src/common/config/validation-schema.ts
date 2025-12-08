@@ -38,6 +38,8 @@ export default Joi.object({
     [ConfigKey.AWS_REGION]: Joi.string().required(),
     [ConfigKey.AWS_ACCESS_KEY_ID]: Joi.string().required(),
     [ConfigKey.AWS_SECRET_ACCESS_KEY]: Joi.string().required(),
+    [ConfigKey.AWS_S3_BUCKET]: Joi.string().required(),
+    [ConfigKey.AWS_S3_SIGNED_URL_EXPIRED_IN_SECOND]: Joi.number().required(),
 
     // Cloud Front
     [ConfigKey.CLOUD_FRONT_URL]: Joi.string().required(),
