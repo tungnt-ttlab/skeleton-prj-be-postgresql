@@ -1,0 +1,7 @@
+{
+    "error": {
+        "invalidPageStateFormat": "Invalid page state format",
+        "encodePageStateError": "Error encoding page state",
+        "executeError": "Error executing query"
+    }
+}

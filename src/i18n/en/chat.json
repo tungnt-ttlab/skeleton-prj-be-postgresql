@@ -1,0 +1,23 @@
+{
+    "error": {
+        "chatRoomParticipant": {
+            "notFound": "Chat room participant not found",
+            "alreadyPinned": "Chat room participant already pinned",
+            "alreadyNotPinned": "Chat room participant already not pinned",
+            "maxPinCount": "Max pin count reached"
+        },
+        "chatRoom": {
+            "notFound": "Chat room not found",
+            "createFailed": "Failed to create chat room"
+        },
+        "message": {
+            "notFound": "Message not found",
+            "notReviewMessage": "Message is not a review message",
+            "reviewAlreadyWritten": "Review already written",
+            "alreadyUnlocked": "Message already unlocked",
+            "unlockNotPaidMessage": "Message is not a paid message",
+            "replyToMessageNotFound": "Reply to message not found",
+            "replyToMessageNotUnlocked": "Reply to message is not unlocked"
+        }
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "sonarlint.connectedMode.project": {
+        "connectionId": "starslive",
+        "projectKey": "prj-md-starslive-chat-service"
+    }
+}

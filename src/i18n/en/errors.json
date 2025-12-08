@@ -1,0 +1,14 @@
+{
+    "400": "Bad Request",
+    "401": "Unauthorized",
+    "403": "Forbidden",
+    "404": "Not found",
+    "444": "The item you're looking for couldn't be found.",
+    "445": "This item is already existed.",
+    "446": "This item is invalid. ",
+    "500": "Technical issue (ID: {param}). Please try again later. ",
+    "503": "Service Unavailable.",
+    "system": {
+        "error": "Temporary system error. Please try again later."
+    }
+}

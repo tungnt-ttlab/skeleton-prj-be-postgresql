@@ -1,0 +1,35 @@
+{
+    "moduleFileExtensions": ["js", "json", "ts"],
+    "rootDir": "src",
+    "testRegex": ".*\\.spec\\.ts$",
+    "transform": {
+        "^.+\\.(t|j)s$": "ts-jest"
+    },
+    "collectCoverageFrom": [
+        "**/*.controller.(t|j)s",
+        "**/*.service.(t|j)s",
+        "**/*.repository.(t|j)s",
+        "**/*.opensearch.(t|j)s",
+        "**/*.helper.(t|j)s",
+        "**/helpers.(t|j)s",
+        "**/*.middleware.(t|j)s",
+        "**/*.guard.(t|j)s",
+        "**/*.interceptor.(t|j)s",
+        "**/*.validator.(t|j)s",
+        "**/plugins/*.(t|j)s",
+        "**/common/helpers/*.(t|j)s"
+    ],
+    "testEnvironment": "node",
+    "moduleDirectories": ["node_modules", "src"],
+    "modulePaths": ["<rootDir>"],
+    "roots": ["<rootDir>"],
+    "moduleNameMapper": {
+        "^@/(.*)$": "<rootDir>/$1",
+        "^src/(.*)$": "<rootDir>/$1"
+    },
+
+    "collectCoverage": true,
+    "coverageDirectory": "../test/coverage",
+    "coverageReporters": ["text", "lcov"],
+    "coveragePathIgnorePatterns": ["/node_modules/", "/dist/"]
+}
