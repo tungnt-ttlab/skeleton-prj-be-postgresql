@@ -66,10 +66,10 @@ async function bootstrap() {
     // config swagger
     const config = new DocumentBuilder()
         .addBearerAuth()
-        .setTitle('Starslive API')
-        .setDescription('The Starslive API description')
+        .setTitle('Test Service API')
+        .setDescription('The Test Service API description')
         .setVersion('v1')
-        .addTag('starslive')
+        .addTag('test')
         .build();
     const document = SwaggerModule.createDocument(app, config);
     SwaggerModule.setup('swagger', app, document);
